@@ -76,9 +76,12 @@ function setLaunchDetails(details){
  * @param {number} percent Percentage (0-100)
  */
 function setLaunchPercentage(percent){
+    console.log(percent);
     launch_progress.setAttribute('max', 100)
     launch_progress.setAttribute('value', percent)
     launch_progress_label.innerHTML = percent + '%'
+    els.launch.post.txt.innerText = percent + '%';
+    if (percent === 100) els.launch.post.txt.style.display = 'none';
 }
 
 /**
@@ -89,6 +92,7 @@ function setLaunchPercentage(percent){
 function setDownloadPercentage(percent){
     remote.getCurrentWindow().setProgressBar(percent/100)
     setLaunchPercentage(percent)
+    els.launch.post.txt.innerText = percent + '%';
 }
 
 /**
@@ -151,7 +155,7 @@ function updateSelectedAccount(authUser){
             username = authUser.displayName
         }
         if(authUser.uuid != null){
-            document.getElementById('avatarContainer').style.backgroundImage = `url('https://mc-heads.net/body/${authUser.uuid}/right')`
+            document.getElementById('avatarContainer').style.backgroundImage = `url('https://mc-heads.net/head/${authUser.uuid}/right')`
         }
     }
     user_text.innerHTML = username

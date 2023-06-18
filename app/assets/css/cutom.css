@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("../fonts/GmarketSansLight.otf");
+}
+
+* {
+  font-family: 'GmarketSansLight';
+  letter-spacing: -1px;
+}
+
+
+
+#loginOptionMicrosoft {
+  position: absolute;
+  bottom: 76px;
+  right: 117px;
+  
+  background-color: transparent;
+  border: none;
+  
+  width: 230px;
+  aspect-ratio: 300 / 60;
+  border-radius: 230px;
+  background-image: url("../images/custom/microsoft-login-btn.png");
+  background-size: contain;
+
+  cursor: pointer;
+  translate: 0.3s filter;
+}
+#loginOptionMicrosoft:hover {
+  filter: brightness(1.2);
+}
+
+
+
+#user_content {
+  position: absolute;
+  top: 15px;
+  left: 36px;
+
+  width: 115px;
+}
+
+#avatarContainer {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: 100%;
+
+  filter: drop-shadow(2px 2px 2px #444);
+}
+
+#user_text {
+  display: inline-block;
+  color: #000;
+
+  font-size: 13px;
+  font-weight: bolder;
+  
+  transform: translateY(-6px);
+}
+
+
+
+#custom_nav {
+  position: absolute;
+  top: 21px;
+  left: 200px;
+}
+
+.custom_nav__item {
+  display: inline-block;
+  margin-right: 38px;
+
+  background-size: cover;
+  transition: 0.3s filter;
+  cursor: pointer;
+}
+.custom_nav__item:hover {
+  filter: invert(1);
+}
+
+#custom_nav__sv_discord {
+  width: 80px;
+  aspect-ratio: 104 / 27;
+  background-image: url("../images/custom/nav_discord.png");
+}
+
+#custom_nav__sp_discord {
+  width: 93px;
+  aspect-ratio: 121 / 26;
+  background-image: url("../images/custom/nav_sponsor-discord.png");
+}
+
+#custom_nav__ow_youtube {
+  width: 80px;
+  aspect-ratio: 105 / 26;
+  background-image: url("../images/custom/nav_youtube.png");
+}
+
+#settingsMediaButton {
+  width: 55px;
+  aspect-ratio: 69 / 26;
+  background-image: url("../images/custom/nav_settings.png");
+}
+
+#custom_launch-content {
+  position: absolute;
+  bottom: 76px;
+  right: 117px;
+}
+
+#launch_button {
+  width: 230px;
+  aspect-ratio: 300 / 60;
+  border-radius: 230px;
+  background-image: url("../images/custom/launch-btn.png");
+  background-size: contain;
+
+  cursor: pointer;
+  translate: 0.3s filter;
+}
+#launch_button:hover {
+  filter: brightness(1.2);
+}
+
+#custom__article-list {
+  position: absolute;
+  top: 42%;
+  left: 65%;
+}
+#custom__article-list > .naver-article:nth-child(2n - 1) {
+  background-color: #c2ad9b88;
+}
+#custom__article-list > .naver-article:nth-child(2n) {
+  background-color: #693e1744;
+}
+
+.naver-article {
+  padding: 6px 2px;
+  margin-bottom: 3px;
+
+  border-radius: 5px;
+  
+  cursor: pointer;
+  transition: 0.3s background-color, 0.3s box-shadow;
+}
+.naver-article:hover {
+  box-shadow: 0 0 4px #000, 0 0 4px #000;
+  background-color: #693e17 !important;
+}
+
+.naver-article * {
+  display: inline-block;
+
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.naver-article__title {
+  width: 200px;
+
+  font-weight: bolder;
+  color: #fff;
+}
+
+.naver-article__content {
+  width: 100px;
+
+  color: #fff8;
+}

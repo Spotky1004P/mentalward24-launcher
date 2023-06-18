@@ -1,7 +1,7 @@
 {
   "name": "mentalward24-launcher",
-  "version": "1.0.0",
-  "productName": "8곤듀와집사들 서버 런처",
+  "version": "1.0.2",
+  "productName": "우리 모두 행복한 정신병동 서버 런처",
   "description": "Modded Minecraft Launcher",
   "author": "Spotky1004P & Daniel Scalzi (https://github.com/dscalzi/)",
   "license": "UNLICENSED",
@@ -25,6 +25,8 @@
   "dependencies": {
     "@electron/remote": "^2.0.8",
     "adm-zip": "^0.5.9",
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
     "discord-rpc-patch": "^4.0.1",
     "ejs": "^3.1.9",
     "ejs-electron": "^2.1.1",
@@ -34,6 +36,7 @@
     "got": "^11.8.5",
     "helios-core": "~2.0.4",
     "helios-distribution-types": "^1.2.0",
+    "iconv-lite": "^0.6.3",
     "jquery": "^3.6.4",
     "semver": "^7.4.0"
   },

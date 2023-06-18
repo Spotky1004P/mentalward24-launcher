@@ -227,6 +227,7 @@ function createWindow() {
         height: 552,
         icon: getPlatformIcon('SealCircle'),
         frame: false,
+        resizable: false,
         webPreferences: {
             preload: path.join(__dirname, 'app', 'assets', 'js', 'preloader.js'),
             nodeIntegration: true,
@@ -246,7 +247,7 @@ function createWindow() {
 
     win.removeMenu()
 
-    win.resizable = true
+    // win.resizable = true
 
     win.on('closed', () => {
         win = null
