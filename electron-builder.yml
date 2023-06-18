@@ -1,8 +1,8 @@
-appId: 'helioslauncher'
-productName: 'Helios Launcher'
-artifactName: '${productName}-setup-${version}.${ext}'
+appId: 'mentalward24launcher'
+productName: '8곤듀와집사들 서버 런처'
+artifactName: '${productName} 설치 파일 (${version}).${ext}'
 
-copyright: 'Copyright © 2018-2022 Daniel Scalzi'
+copyright: 'Copyright © 2018-2022 Daniel Scalzi, Spotky1004P'
 
 asar: true
 compression: 'maximum'
@@ -31,8 +31,7 @@ mac:
   target:
     - target: 'dmg'
       arch:
-        - 'x64'
-        - 'arm64'
+        - 'universal'
   artifactName: '${productName}-setup-${version}-${arch}.${ext}'
   category: 'public.app-category.games'
 

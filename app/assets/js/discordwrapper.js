@@ -8,12 +8,12 @@ const { Client } = require('discord-rpc-patch')
 let client
 let activity
 
-exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting for Client..'){
+exports.initRPC = function(genSettings, servSettings, initialDetails = '클라이언트 대기중...'){
     client = new Client({ transport: 'ipc' })
 
     activity = {
         details: initialDetails,
-        state: 'Server: ' + servSettings.shortId,
+        state: '서버: ' + servSettings.shortId,
         largeImageKey: servSettings.largeImageKey,
         largeImageText: servSettings.largeImageText,
         smallImageKey: genSettings.smallImageKey,
