@@ -129,6 +129,9 @@
   top: 42%;
   left: 65%;
 }
+#custom__article-list:hover {
+  z-index: 100;
+}
 #custom__article-list > .naver-article:nth-child(2n - 1) {
   background-color: #c2ad9b88;
 }
@@ -152,6 +155,7 @@
 
 .naver-article * {
   display: inline-block;
+  height: 20px;
 
   text-align: left;
   white-space: nowrap;
@@ -165,9 +169,21 @@
   font-weight: bolder;
   color: #fff;
 }
+.naver-article:hover > .naver-article__title {
+  display: block;
+  width: 300px;
+}
 
 .naver-article__content {
   width: 100px;
 
   color: #fff8;
+
+  transition: 0.3s height;
+}
+.naver-article:hover > .naver-article__content {
+  width: 300px;
+  height: 100px;
+
+  white-space: normal;
 }

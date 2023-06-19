@@ -181,7 +181,7 @@ class CafeArticleCrawler {
 const crawler = new CafeArticleCrawler("https://cafe.naver.com/mentalward24/ArticleList.nhn?search.clubid=31002531&search.menuid=2&search.boardtype=L");
 crawler.getArticleList()
   .then(list => {
-    console.log(list);
+    console.log("개시글 목록: ", list);
     for (let i = 0; i < Math.min(list.length, 5); i++) {
       els.launch.articleList.appendChild(CafeArticleCrawler.elementify(list[i]));
     }
